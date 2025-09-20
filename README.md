@@ -2,6 +2,8 @@
 
 A Chrome extension that provides real-time MLB pitch tracking functionality directly on MLB.com game pages. Track every pitch with detailed information including pitch type, speed, location, and results.
 
+![MLB Pitch Tracker Demo](demo.png)
+
 ## Features
 
 - **Real-Time Pitch Tracking**: Live pitch data for current at-bat including type, speed, and results
