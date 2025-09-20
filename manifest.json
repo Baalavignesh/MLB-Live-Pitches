@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "MLB Live Pitch Tracker",
+  "version": "1.0",
+  "description": "Real-time pitch tracking for MLB games on mlb.com",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://mlb.com/*",
+    "https://www.mlb.com/*",
+    "https://statsapi.mlb.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "MLB Pitch Tracker"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mlb.com/*",
+        "https://www.mlb.com/*"
+      ],
+      "js": ["popup.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
